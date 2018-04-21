@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>TP JAVA 250 - exports</title>
+</head>
+
+<body>
+{{#factures}}
+    <hr/>
+    <h1>Clients <a href="/clients/csv">csv</a>-<a href="/clients/xlsx">xlsx</a>-<a>json</a>-<a>xml</a>-<a href="/factures/{{id}}/pdf">pdf</a></h1>
+    <hr/>
+ {{/factures}}
+    
+ {{>clients}}
+
+    <hr/>
+    <h1>Factures des clients</h1>
+    <hr/>
+
+
+    {{#factures}}
+		<h2>Factures de {{client.nom}} {{client.prenom}}
+		&nbsp<a href="/clients/{{id}}/factures/xlsx">xlsx</a>&nbsp
+		<a href="/factures/{{id}}/pdf">pdf</a></h2>
+        {{>factures}}
+    {{/factures}}
+</body> 
+</html>

@@ -1,0 +1,27 @@
+<table border="2">
+    <thead>
+    <tr>
+    	<th>Id</th>
+        <th>Nom</th>
+        <th>Prénom</th>
+        <th>Adresse</th>
+        <th>Email</th>
+    </tr>
+    
+    </thead>
+    <tbody>
+    {{#clients}}
+        <tr>
+        	<td>{{id}}</td>
+            <td>{{nom}}</td>
+            <td>{{prenom}}</td>
+            <td>{{adresse}}</td>
+            <td>{{email}}</td>
+         </tr>
+    {{/clients}}
+    <tr></tr>
+    	</br>
+    	<a href="/clients/xlsx">Telecharger la liste des clients </a>
+
+    </tbody>
+</table>

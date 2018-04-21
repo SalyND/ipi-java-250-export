@@ -17,8 +17,19 @@ public class Article {
 
     @Column
     private Double prix;
+    
+    @Column
+    private String marque;
 
-    public Long getId() {
+    public String getMarque() {
+		return marque;
+	}
+
+	public void setMarque(String marque) {
+		this.marque = marque;
+	}
+
+	public Long getId() {
         return id;
     }
 

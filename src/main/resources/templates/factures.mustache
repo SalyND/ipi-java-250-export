@@ -1,0 +1,22 @@
+<table border="1">
+    <thead>
+    <tr>
+        <th>Désignation</th>
+        <th>Marque</th>
+        <th>Prix unitaire</th>
+        <th>Quantité</th>
+        <th>Total</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#ligneFactures}}
+        <tr>
+            <td>{{designation}}</td>
+            <td>{{marque}}</td>
+            <td>{{prixUnitaire}}</td>
+            <td>{{quantite}}</td>
+ 			<td>{{total}}</td>
+        </tr>
+    {{/ligneFactures}}
+    </tbody>
+</table>
